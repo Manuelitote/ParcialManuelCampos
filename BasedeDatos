@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 /* 
 
 BASE DE DATOS UTILIZADA EN COMENTARIO --------------
 
 
 
-CREATE DATABASE IF NOT EXISTS ParcialFormulario
+CREATE DATABASE IF NOT EXISTS parcialformulario
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 
@@ -104,4 +103,4 @@ CREATE TABLE inscriptores (
     FOREIGN KEY (id_pais_residencia) REFERENCES paises(id_pais)
 );
 */
->>>>>>> 8f21c01e52d76372d2673387ed4107af43fe5e50
+
