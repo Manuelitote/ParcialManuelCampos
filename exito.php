@@ -29,7 +29,6 @@ if ($id > 0) {
     <meta charset="UTF-8">
     <title>Registro Exitoso</title>
 
-    <!-- Usa tu CSS cálido existente -->
     <link rel="stylesheet" href="css/estilos.css">
 
     <style>
