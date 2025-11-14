@@ -1,0 +1,52 @@
+/* 
+
+BASE DE DATOS UTILIZADA EN COMENTARIO --------------
+
+
+
+CREATE DATABASE IF NOT EXISTS ParcialFormulario
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_general_ci;
+
+USE ParcialFormulario;
+
+CREATE TABLE paises (
+    id_pais INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_pais VARCHAR(100) NOT NULL
+);
+
+INSERT INTO paises (nombre_pais) VALUES
+('Alemania'),
+('Francia'),
+('Suiza'),
+('China'),
+('Portugal');
+
+CREATE TABLE areas_interes (
+    id_area INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_area VARCHAR(100) NOT NULL
+);
+
+INSERT INTO areas_interes (nombre_area) VALUES
+('Ciberseguridad'),
+('Marketing digital'),
+('Ofimática'),
+('Programación básica'),
+('Redes sociales');
+
+CREATE TABLE inscriptores (
+    id_inscriptor INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    edad INT NOT NULL,
+    sexo ENUM('M','F','Otro') NOT NULL,
+    id_pais_residencia INT NOT NULL,
+    nacionalidad VARCHAR(100) NOT NULL,
+    correo VARCHAR(120) NOT NULL,
+    celular VARCHAR(20) NOT NULL,
+    temas_interes TEXT,
+    observaciones TEXT,
+    fecha_formulario DATETIME NOT NULL,
+    FOREIGN KEY (id_pais_residencia) REFERENCES paises(id_pais)
+);
+*/
